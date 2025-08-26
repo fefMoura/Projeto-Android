@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf);
+}
+
+/* N]ao usei neste projeto, mas podemos criar variaveis com nome de cores para
+facilitar na hora de inserir cores, quando adicionamos as variaveis
+no ctrl+espaço aparecem no fim da lista ->*/
+
+:root {
+    --cor1: #63BF84;
+    --cor2: #43D94D;
+    --cor3: #24a82d;    
+    --cor4: #012510;
+    --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+   
+}
+
+
+
+
+    body{
+      
+        background-color: #63BF84;
+        margin: 0px;
+    }
+
+   
+
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: var(--fonte-padrao);
+}
+    
+    header{
+         
+       
+        text-align: center;
+        background-image: linear-gradient(to bottom, #43D94D,#537370 ); 
+        min-height: 150px;
+        padding: 20px;
+        
+    }
+
+    header h1{
+       
+        margin-bottom: 20px;
+        font-size: 3em;
+    }
+    header > p{
+        font-family: Arial, Helvetica, sans-serif;  
+        color: white; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 1.2em;
+        text-align: center; 
+        max-width: 500px;
+        text-indent: 0;   
+        margin: 0 auto 10px auto;   
+        
+    }
+
+     nav{
+            background-color: #2c3837;
+
+        text-align: left;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+       
+    }
+
+    nav a{
+        
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        transition-duration: .06s;
+    }
+
+    nav a:hover{
+        color: lightgreen;
+        text-decoration: underline;
+        background-color: #012510;
+    }
+
+    main{
+
+        margin: auto;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 20px;
+        min-width: 280px;
+        max-width: 800px;
+        
+    }
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    h2{
+      
+        margin-left: 20px;
+        font-family: 'idroid';
+        color: #24a82d;
+        margin-top:0px;
+        padding-top:20px;
+    }
+    h3{
+       
+        margin-left: 20px;
+        font-family: 'idroid';
+        color: #24a82d;
+        background-image: linear-gradient(90deg, #73f77c, transparent); ;
+    }
+
+   aside >  h4{
+        color: white;;
+        border-radius: 10px 10px 0px 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgb(5, 177, 20);
+        padding: 10px;
+        margin: -10px -20px 0px -20px;
+       
+    }
+
+
+  
+   #pfooter{ 
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #012510;
+        color: white;
+        padding: 10px;
+        margin: 0px;
+        font-size: 0.8em;
+        
+   }
+
+   footer a{
+        color: lightgreen;
+        text-decoration: none;
+        font-weight: bold;
+   }
+
+   footer a:hover{
+        text-decoration: underline;
+   }
+ 
+
+p{
+    
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+.imagens > img{
+    margin: auto;
+    display: block;
+}
+
+#irina-blok > img{
+
+    box-shadow:  2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+#bugdroid{
+    display: block;
+    margin: auto;
+    max-width: 250px;
+}
+
+div.video{
+    background-color: #08640e;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+   position: relative;
+   padding-bottom: 56.5%;
+    
+}
+.video > iframe{
+    box-shadow:  2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+#curiosidades{
+    
+    background-color: #aceeb0;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 20px 20px 20px;
+
+}
+
+
+#curiosidades > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0';
+    
+}
+
+
+.negritoverde{
+    font-weight: bold;
+    color: green;
+}
+
+.links{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    transition-duration: .06s;
+    background-color: #11ee20;
+    padding: 2px 6px;
+}
+
+.links::after{
+    content: " 🔗";
+}
+.links:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+
+
+
+
+abbr{
+    text-decoration: none;
+    cursor: help;
+}
+
+main img {
+    width: 100%;
+}
+
